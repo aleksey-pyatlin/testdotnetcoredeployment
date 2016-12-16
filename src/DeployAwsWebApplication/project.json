@@ -1,5 +1,6 @@
 ﻿{
   "dependencies": {
+    "NLog.Extensions.Logging": "1.0.0-*",
     "Microsoft.AspNetCore.Diagnostics": "1.0.0",
     "Microsoft.AspNetCore.Mvc": "1.0.1",
     "Microsoft.AspNetCore.Razor.Tools": {
@@ -26,7 +27,7 @@
   },
 
   "frameworks": {
-    "net461" : {}
+    "net461": {}
   },
 
   "buildOptions": {
@@ -40,12 +41,14 @@
     }
   },
 
+  
   "publishOptions": {
     "include": [
       "wwwroot",
       "**/*.cshtml",
       "appsettings.json",
-      "web.config"
+      "web.config",
+      "nlog.config"
     ]
   },
 
